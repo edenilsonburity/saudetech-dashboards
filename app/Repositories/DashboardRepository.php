@@ -40,6 +40,7 @@ class DashboardRepository
     /** Gráfico de exemplo: quantos usuários existem em cada perfil. */
     public function usuariosPorPerfil(): array
     {
+        // professor eu nãoo tenho acesso ao banco de dados , pois eu não veio na aula de quarta-feira 
         return $this->consultar("
             SELECT perfil   AS perfil,
                    COUNT(*) AS quantidade
