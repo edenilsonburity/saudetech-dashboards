@@ -6,9 +6,9 @@
 //        'doughnut' (rosca) ou 'pie' (pizza)
 // =============================================================================
 $configMeuIndicador = [
-    'titulo'   => 'Meu indicador',
-    'pergunta' => 'Qual pergunta este gráfico responde?',
-    'tipo'     => 'bar',
+    'titulo'   => 'I01 - Vistorias por status',
+    'pergunta' => 'Como estão distribuídas as vistorias por status?',
+    'tipo'     => 'doughnut',
 ];
 // =============================================================================
 

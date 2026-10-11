@@ -61,8 +61,11 @@ class DashboardRepository
     public function meuIndicador(): array
     {
         return $this->consultar("
-            SELECT 'Substitua esta consulta' AS rotulo,
-                   0                         AS valor
+            SELECT status AS status_vistoria,
+	               COUNT(*) AS quantidade
+                FROM vistorias
+             GROUP BY status
+             ORDER BY count(*)
         ");
     }
 }

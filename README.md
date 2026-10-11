@@ -11,7 +11,7 @@ o painel já funciona (login, vistorias, estabelecimentos, usuários), e cada al
 
 ## 🚀 Como rodar
 
-Pré-requisitos: Git e Docker Desktop (aberto, com *Engine running*).
+Pré-requisitos: Git e Docker Desktop (aberto, com _Engine running_).
 
 ```bash
 # 1. Crie o arquivo de configuração a partir do modelo e preencha com os dados do banco
@@ -31,11 +31,11 @@ Usuário de teste do painel: `admin@londrina.pr.gov.br` (senha informada pelo pr
 
 ## 🧩 Onde o aluno trabalha
 
-| Arquivo | O que fazer |
-| --- | --- |
-| `app/Repositories/DashboardRepository.php` | No método `meuIndicador()`, colar a consulta SQL do indicador escolhido |
-| `views/dashboard/index.php` | No topo, em `$configMeuIndicador`, definir título, pergunta e tipo do gráfico |
-| `README.md` | Preencher a seção **Meu indicador**, logo abaixo |
+| Arquivo                                    | O que fazer                                                                   |
+| ------------------------------------------ | ----------------------------------------------------------------------------- |
+| `app/Repositories/DashboardRepository.php` | No método `meuIndicador()`, colar a consulta SQL do indicador escolhido       |
+| `views/dashboard/index.php`                | No topo, em `$configMeuIndicador`, definir título, pergunta e tipo do gráfico |
+| `README.md`                                | Preencher a seção **Meu indicador**, logo abaixo                              |
 
 O gráfico e a tabela são montados automaticamente a partir do resultado da consulta:
 **1ª coluna = rótulo**, **demais colunas = números**. É o mesmo formato do roteiro SQL.
@@ -46,10 +46,10 @@ O gráfico e a tabela são montados automaticamente a partir do resultado da con
 
 > Aluno: preencha esta seção no seu branch.
 
-- **Aluno(a):** _nome e RA_
-- **Indicador:** _ex.: I03 — Vistorias por tipo de estabelecimento_
-- **Pergunta que responde:** _..._
-- **Tipo de gráfico:** _..._
+- **Aluno(a):** _Diorgenis José D. O. L. de Mello RA:260016522_
+- **Indicador:** _I01 — Vistorias por status_
+- **Pergunta que responde:** _Como estão distribuídas as vistorias por status?_
+- **Tipo de gráfico:** _Rosca_
 
 ---
 
@@ -59,14 +59,14 @@ O gráfico e a tabela são montados automaticamente a partir do resultado da con
 <tipo>(<escopo>): <descrição curta no imperativo>
 ```
 
-| Tipo | Quando usar | Exemplo |
-| --- | --- | --- |
-| `feat` | Nova funcionalidade | `feat(dashboard): adiciona consulta do indicador I03` |
-| `fix` | Correção de erro | `fix(dashboard): corrige divisão por zero no percentual` |
-| `docs` | Só documentação | `docs(readme): descreve o indicador I03` |
-| `style` | Formatação, sem mudar comportamento | `style(dashboard): ajusta indentação do SQL` |
+| Tipo       | Quando usar                               | Exemplo                                                    |
+| ---------- | ----------------------------------------- | ---------------------------------------------------------- |
+| `feat`     | Nova funcionalidade                       | `feat(dashboard): adiciona consulta do indicador I03`      |
+| `fix`      | Correção de erro                          | `fix(dashboard): corrige divisão por zero no percentual`   |
+| `docs`     | Só documentação                           | `docs(readme): descreve o indicador I03`                   |
+| `style`    | Formatação, sem mudar comportamento       | `style(dashboard): ajusta indentação do SQL`               |
 | `refactor` | Reorganiza código sem mudar comportamento | `refactor(dashboard): extrai consulta para método próprio` |
-| `chore` | Tarefas de manutenção | `chore: atualiza .gitignore` |
+| `chore`    | Tarefas de manutenção                     | `chore: atualiza .gitignore`                               |
 
 ## 🏷️ Versionamento semântico (SemVer)
 
@@ -74,10 +74,10 @@ O gráfico e a tabela são montados automaticamente a partir do resultado da con
 vMAIOR.MENOR.CORREÇÃO      ex.: v1.1.0
 ```
 
-| Parte | Muda quando… | Exemplo neste projeto |
-| --- | --- | --- |
-| MAIOR | Algo deixa de ser compatível | Trocar o banco de dados → `v2.0.0` |
-| MENOR | Nova funcionalidade compatível | Acrescentar um indicador → `v1.1.0` |
+| Parte    | Muda quando…                     | Exemplo neste projeto                  |
+| -------- | -------------------------------- | -------------------------------------- |
+| MAIOR    | Algo deixa de ser compatível     | Trocar o banco de dados → `v2.0.0`     |
+| MENOR    | Nova funcionalidade compatível   | Acrescentar um indicador → `v1.1.0`    |
 | CORREÇÃO | Correção sem funcionalidade nova | Corrigir o SQL do indicador → `v1.1.1` |
 
 ---
@@ -100,4 +100,5 @@ Problemas de conexão com o banco: coloque `APP_DEBUG=1` no `.env` e abra
 `http://localhost:8080/diagnostico.php`.
 
 ## 📄 Licença
+
 MIT
