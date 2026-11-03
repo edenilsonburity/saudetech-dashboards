@@ -6,8 +6,8 @@
 //        'doughnut' (rosca) ou 'pie' (pizza)
 // =============================================================================
 $configMeuIndicador = [
-    'titulo'   => 'Meu indicador',
-    'pergunta' => 'Qual pergunta este gráfico responde?',
+    'titulo'   => 'I08 — Interdições por bairros',
+    'pergunta' => 'Em quais bairros houve mais interdições?',
     'tipo'     => 'bar',
 ];
 // =============================================================================
