@@ -60,9 +60,18 @@ class DashboardRepository
     // =========================================================================
     public function meuIndicador(): array
     {
+        // I08 — Interdições por bairros (Grupo 01)
+        // Pergunta: Em quais bairros houve mais interdições?
+        // COALESCE agrupa estabelecimentos sem bairro cadastrado em "Não informado",
+        // evitando uma barra sem rótulo no gráfico.
         return $this->consultar("
-            SELECT 'Substitua esta consulta' AS rotulo,
-                   0                         AS valor
+            SELECT COALESCE(NULLIF(TRIM(e.bairro), ''), 'Não informado') AS bairro,
+                   COUNT(i.id)                                          AS interdicoes
+              FROM interdicoes i
+              JOIN vistorias v        ON v.id = i.vistoria_id
+              JOIN estabelecimentos e ON e.id = v.estabelecimento_id
+             GROUP BY 1
+             ORDER BY interdicoes DESC
         ");
     }
 }

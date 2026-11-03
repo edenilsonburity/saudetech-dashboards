@@ -1,0 +1,111 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="J9hhH6drI5Rb0WKEzj6K">
+    <mxGraphModel dx="1493" dy="814" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="nav" parent="1" style="shape=module;jettyWidth=8;jettySize=4;html=1;whiteSpace=wrap;fontSize=11;fillColor=#ffffff;strokeColor=#666666;" value="«component»&lt;br&gt;&lt;b&gt;Navegador do usuário&lt;/b&gt;&lt;br&gt;HTML · Chart.js · Lucide · SweetAlert2" vertex="1">
+          <mxGeometry height="60" width="300" x="300" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="docker" parent="1" style="rounded=1;arcSize=2;dashed=1;dashPattern=8 4;html=1;whiteSpace=wrap;verticalAlign=top;align=left;spacingLeft=12;spacingTop=4;fontSize=11;fontStyle=1;fillColor=none;strokeColor=#888888;" value="«executionEnvironment» Contêiner Docker · php:8.2-apache" vertex="1">
+          <mxGeometry height="760" width="820" x="40" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="router" parent="1" style="shape=module;jettyWidth=8;jettySize=4;html=1;whiteSpace=wrap;fontSize=11;fillColor=#ffffff;strokeColor=#666666;" value="«component»&lt;br&gt;&lt;b&gt;Roteador · public/index.php&lt;/b&gt;&lt;br&gt;Sessão, login obrigatório, rotas" vertex="1">
+          <mxGeometry height="60" width="300" x="300" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="ctrl" parent="1" style="shape=module;jettyWidth=8;jettySize=4;html=1;whiteSpace=wrap;fontSize=11;verticalAlign=top;spacingTop=6;fillColor=#ffffff;strokeColor=#666666;" value="«component» &lt;b&gt;Controllers · app/Controllers/&lt;/b&gt;" vertex="1">
+          <mxGeometry height="100" width="780" x="60" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="c1" parent="ctrl" style="rounded=1;html=1;fontSize=11;fillColor=#ffffff;strokeColor=#666666;" value="Dashboard" vertex="1">
+          <mxGeometry height="40" width="170" x="20" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="c2" parent="ctrl" style="rounded=1;html=1;fontSize=11;fillColor=#ffffff;strokeColor=#666666;" value="Vistoria" vertex="1">
+          <mxGeometry height="40" width="170" x="210" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="c3" parent="ctrl" style="rounded=1;html=1;fontSize=11;fillColor=#ffffff;strokeColor=#666666;" value="Estabelecimento" vertex="1">
+          <mxGeometry height="40" width="170" x="400" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="c4" parent="ctrl" style="rounded=1;html=1;fontSize=11;fillColor=#ffffff;strokeColor=#666666;" value="User" vertex="1">
+          <mxGeometry height="40" width="170" x="590" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="views" parent="1" style="shape=module;jettyWidth=8;jettySize=4;html=1;whiteSpace=wrap;fontSize=11;verticalAlign=top;spacingTop=6;fillColor=#ffffff;strokeColor=#666666;" value="«component»&lt;br&gt;&lt;b&gt;Views · views/&lt;/b&gt;&lt;br&gt;dashboard/ · vistorias/ · estabelecimentos/&lt;br&gt;users/ · auth/ · partials/ (layout)" vertex="1">
+          <mxGeometry height="160" width="370" x="70" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="grafico" parent="views" style="rounded=1;html=1;fontSize=11;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;" value="&lt;b&gt;Indicador do grupo&lt;/b&gt;&lt;br&gt;views/dashboard/_grafico.php" vertex="1">
+          <mxGeometry height="42" width="330" x="20" y="105" as="geometry" />
+        </mxCell>
+        <mxCell id="core" parent="1" style="shape=module;jettyWidth=8;jettySize=4;html=1;whiteSpace=wrap;fontSize=11;verticalAlign=top;spacingTop=6;fillColor=#ffffff;strokeColor=#666666;" value="«component»&lt;br&gt;&lt;b&gt;Core · app/Core/&lt;/b&gt;&lt;br&gt;Controller: classe base dos controllers&lt;br&gt;Auth: sessão, perfis e CSRF&lt;br&gt;Labels: rótulos dos ENUMs" vertex="1">
+          <mxGeometry height="160" width="370" x="460" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="repos" parent="1" style="shape=module;jettyWidth=8;jettySize=4;html=1;whiteSpace=wrap;fontSize=11;verticalAlign=top;spacingTop=6;fillColor=#ffffff;strokeColor=#666666;" value="«component» &lt;b&gt;Repositories · app/Repositories/&lt;/b&gt;" vertex="1">
+          <mxGeometry height="100" width="780" x="60" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="r1" parent="repos" style="rounded=1;html=1;fontSize=11;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;" value="&lt;b&gt;DashboardRepository&lt;/b&gt;" vertex="1">
+          <mxGeometry height="40" width="170" x="20" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="r2" parent="repos" style="rounded=1;html=1;fontSize=11;fillColor=#ffffff;strokeColor=#666666;" value="Vistoria" vertex="1">
+          <mxGeometry height="40" width="170" x="210" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="r3" parent="repos" style="rounded=1;html=1;fontSize=11;fillColor=#ffffff;strokeColor=#666666;" value="Estabelecimento" vertex="1">
+          <mxGeometry height="40" width="170" x="400" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="r4" parent="repos" style="rounded=1;html=1;fontSize=11;fillColor=#ffffff;strokeColor=#666666;" value="User" vertex="1">
+          <mxGeometry height="40" width="170" x="590" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="config" parent="1" style="shape=module;jettyWidth=8;jettySize=4;html=1;whiteSpace=wrap;fontSize=11;fillColor=#ffffff;strokeColor=#666666;" value="«component»&lt;br&gt;&lt;b&gt;Config · app/Config/&lt;/b&gt;&lt;br&gt;Database.php: conexão PDO única&lt;br&gt;Env.php: lê as variáveis do .env" vertex="1">
+          <mxGeometry height="80" width="300" x="300" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="httpBall" parent="1" style="ellipse;html=1;fillColor=#ffffff;strokeColor=#666666;" value="" vertex="1">
+          <mxGeometry height="16" width="16" x="442" y="112" as="geometry" />
+        </mxCell>
+        <mxCell id="httpLbl" parent="1" style="text;html=1;fontSize=11;align=left;verticalAlign=middle;" value="HTTP (GET/POST)" vertex="1">
+          <mxGeometry height="20" width="120" x="466" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="eNavBall" edge="1" parent="1" source="nav" style="edgeStyle=orthogonalEdgeStyle;dashed=1;html=1;endArrow=open;endFill=0;strokeColor=#666666;fontSize=10;align=left;" target="httpBall" value="«use»">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eRouterBall" edge="1" parent="1" source="router" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=none;strokeColor=#666666;" target="httpBall" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eRouterCtrl" edge="1" parent="1" source="router" style="edgeStyle=orthogonalEdgeStyle;dashed=1;html=1;endArrow=open;endFill=0;strokeColor=#666666;fontSize=10;align=left;" target="ctrl" value="instancia o controller">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eCtrlViews" edge="1" parent="1" source="ctrl" style="edgeStyle=orthogonalEdgeStyle;dashed=1;html=1;endArrow=open;endFill=0;strokeColor=#666666;fontSize=10;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="views" value="render()">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eCtrlCore" edge="1" parent="1" source="ctrl" style="edgeStyle=orthogonalEdgeStyle;dashed=1;html=1;endArrow=open;endFill=0;strokeColor=#666666;fontSize=10;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="core" value="herda e usa">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eCtrlRepos" edge="1" parent="1" source="ctrl" style="edgeStyle=orthogonalEdgeStyle;dashed=1;html=1;endArrow=open;endFill=0;strokeColor=#666666;fontSize=10;align=left;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="repos" value="consulta">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eReposConfig" edge="1" parent="1" source="repos" style="edgeStyle=orthogonalEdgeStyle;dashed=1;html=1;endArrow=open;endFill=0;strokeColor=#666666;fontSize=10;align=left;" target="config" value="getConnection()">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="env" parent="1" style="html=1;whiteSpace=wrap;fontSize=11;fillColor=#ffffff;strokeColor=#666666;" value="«artifact»&lt;br&gt;&lt;b&gt;.env&lt;/b&gt;&lt;br&gt;credenciais do banco" vertex="1">
+          <mxGeometry height="60" width="160" x="60" y="980" as="geometry" />
+        </mxCell>
+        <mxCell id="eConfigEnv" edge="1" parent="1" source="config" style="edgeStyle=orthogonalEdgeStyle;dashed=1;html=1;endArrow=open;endFill=0;strokeColor=#666666;fontSize=10;align=left;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="env" value="lê">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sqlBall" parent="1" style="ellipse;html=1;fillColor=#ffffff;strokeColor=#666666;" value="" vertex="1">
+          <mxGeometry height="16" width="16" x="442" y="934" as="geometry" />
+        </mxCell>
+        <mxCell id="eConfigBall" edge="1" parent="1" source="config" style="edgeStyle=orthogonalEdgeStyle;dashed=1;html=1;endArrow=open;endFill=0;strokeColor=#666666;fontSize=10;align=left;" target="sqlBall" value="«use»  SQL via PDO pgsql (porta 5432)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="db" parent="1" style="shape=cylinder3;boundedLbl=1;backgroundOutline=1;size=10;html=1;whiteSpace=wrap;fontSize=11;fillColor=#ffffff;strokeColor=#666666;" value="«database»&lt;br&gt;&lt;b&gt;PostgreSQL · saudetech&lt;/b&gt;&lt;br&gt;hospedado no Render" vertex="1">
+          <mxGeometry height="90" width="160" x="370" y="990" as="geometry" />
+        </mxCell>
+        <mxCell id="eBallDb" edge="1" parent="1" source="sqlBall" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=none;strokeColor=#666666;" target="db" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="legend" parent="1" style="rounded=0;html=1;whiteSpace=wrap;align=left;spacingLeft=8;fontSize=10;fillColor=#ffffff;strokeColor=#666666;" value="&lt;b&gt;Legenda&lt;/b&gt;&lt;br&gt;Grupo: SaudeTech Dashboard&lt;br&gt;Data: 10/10/2026&lt;br&gt;Ferramenta: draw.io&lt;br&gt;&lt;span style=&quot;color: rgb(108, 142, 191);&quot;&gt;■&lt;/span&gt; Indicador implementado pelo grupo" vertex="1">
+          <mxGeometry height="100" width="260" x="600" y="980" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
