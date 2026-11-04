@@ -44,12 +44,20 @@ O gráfico e a tabela são montados automaticamente a partir do resultado da con
 
 ## 📊 Meu indicador
 
-> Aluno: preencha esta seção no seu branch.
+> Alunos:
 
-- **Aluno(a):** _nome e RA_
-- **Indicador:** _ex.: I03 — Vistorias por tipo de estabelecimento_
-- **Pergunta que responde:** _..._
-- **Tipo de gráfico:** _..._
+- **Alunos:**
+
+_KAWA DANIEL DA SILVA LEITE - RA: 26009665-2_
+_JOÃO VITOR ALVES PORTO - RA: 26010384-2_
+_ANDRÉ LUCAS MARUYAMA ZANI - RA: 26005154-2_
+_SILAS BEZERRA - RA: 26010241-2_
+_JOEL VASCO VICENTE - RA:26012733-2_
+_BRUNO CREMONEZ - RA:26007319-2_
+
+- **Indicador:** _I02 - Vistorias realizadas e canceladas nos últimos 6 meses_
+- **Pergunta que responde:** _Quantas vistorias foram realizadas e canceladas em cada mês?_
+- **Tipo de gráfico:** _line_
 
 ---
 

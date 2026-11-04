@@ -61,8 +61,15 @@ class DashboardRepository
     public function meuIndicador(): array
     {
         return $this->consultar("
-            SELECT 'Substitua esta consulta' AS rotulo,
-                   0                         AS valor
+        SELECT 
+        TO_CHAR(DATE_TRUNC('month', data_agendada), 'YYYY-MM') AS mes,
+        COUNT(*) FILTER (WHERE status IN ('finalizada', 'sincronizada')) AS realizadas,
+        COUNT(*) FILTER (WHERE status = 'cancelada') AS canceladas,
+        COUNT(*) AS total
+        FROM vistorias
+        WHERE data_agendada >= CURRENT_DATE - INTERVAL '6 months'
+        GROUP BY 1
+        ORDER BY 1;
         ");
     }
 }

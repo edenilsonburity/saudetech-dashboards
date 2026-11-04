@@ -6,9 +6,9 @@
 //        'doughnut' (rosca) ou 'pie' (pizza)
 // =============================================================================
 $configMeuIndicador = [
-    'titulo'   => 'Meu indicador',
-    'pergunta' => 'Qual pergunta este gráfico responde?',
-    'tipo'     => 'bar',
+    'titulo'   => 'I02 - Vistorias realizadas e canceladas nos últimos 6 meses',
+    'pergunta' => 'Quantas vistorias foram realizadas e canceladas em cada mês?',
+    'tipo'     => 'line',
 ];
 // =============================================================================
 
